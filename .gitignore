@@ -1,0 +1,12 @@
+# Ignore system files and user-level folders
+*.log
+*.tmp
+*.cache
+*.DS_Store
+__pycache__/
+node_modules/
+.env
+.vscode/
+AppData/
+Desktop.ini
+Thumbs.db
