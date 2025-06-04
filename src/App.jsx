@@ -28,21 +28,17 @@ export default function Home() {
           <li><a href="#contact" className="hover:text-white">Contact</a></li>
         </ul>
       </nav>
-
-      {/* Hero Section */}
-     import { motion } from "framer-motion";
-
 {/* Hero Section */}
 <section className="p-4 md:p-10 mb-10 flex flex-col md:flex-row items-center gap-8">
   <motion.img
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.8 }}
-    src="/profile.jpg"
+    src="/Kennedy_portfolio/profile.jpg"
     alt="Otieno Kennedy Onyango"
     className="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-blue-400"
   />
-  
+
   <motion.div
     initial={{ opacity: 0, x: -50 }}
     animate={{ opacity: 1, x: 0 }}
@@ -57,6 +53,7 @@ export default function Home() {
     </p>
   </motion.div>
 </section>
+
 
       {/* Projects Section */}
       <section id="projects" className="mb-10 bg-black bg-opacity-50 p-4 md:p-6 rounded-lg max-w-4xl mx-auto">
@@ -157,16 +154,37 @@ export default function Home() {
         <ul className="mt-4 space-y-3 text-sm">
           <li className="flex items-center space-x-2">
             <span className="text-blue-300">📧 Email:</span>
-            <a
-              href="mailto:otienokennedy1139@gmail.com"
+             <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=otienokennedy1139@gmail.com&su=Contact%20from%20Portfolio&body=Hi%20Kennedy,"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:underline text-blue-400"
             >
               otienokennedy1139@gmail.com
             </a>
           </li>
           <li className="flex items-center space-x-2">
+            <li className="flex items-center space-x-2">
+            <span className="text-blue-300">📱 WhatsApp:</span>
+            <a
+              href="https://wa.me/254759355661"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline text-blue-400"
+            >
+              +254 759 355 661
+            </a> 
+          </li>
+          <li className="flex items-center space-x-2"></li>
             <span className="text-blue-300">📱 Phone:</span>
-            <span className="text-blue-400">+254 799 314 035</span>
+            <a
+              href="https://wa.me/254759355661"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline text-blue-400"
+            >
+            <span className="text-blue-400">+254 759 355 661</span>
+            </a>
           </li>
           <li className="flex items-center space-x-2">
             <span className="text-blue-300">🌐 GitHub:</span>
