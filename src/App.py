@@ -42,7 +42,7 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          src="/profile.jpg"
+          src="Kennedy_portfolio/profile.jpg"
           alt="Otieno Kennedy Onyango"
           className="w-32 h-32 sm:w-44 sm:h-44 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-4 border-blue-400"
         />
