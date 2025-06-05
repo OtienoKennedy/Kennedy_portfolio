@@ -115,9 +115,9 @@ export default function Home() {
           title: "Certifications & Achievements",
           content: (
             <ul className="list-disc pl-4 text-sm">
-              <li>Google IT Support Certification – Coursera</li>
-              <li>Python for Everybody – University of Michigan</li>
-              <li>Best Project Award – University of Embu Final Year Expo 2025</li>
+              #<li>Google IT Support Certification – Coursera</li>
+              #<li>Python for Everybody – University of Michigan</li>
+              #<li>Best Project Award – University of Embu Final Year Expo 2025</li>
             </ul>
           ),
         },
