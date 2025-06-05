@@ -96,9 +96,10 @@ export default function Home() {
                 <h3 className="text-blue-300 font-semibold">ICT Support & Lab Assistant – Embu College</h3>
                 <p>Jan 2023 – Dec 2023</p>
                 <ul className="list-disc pl-4 mt-1">
-                  <li>Assisted students with software installation and troubleshooting.</li>
-                  <li>Managed computer lab inventory and network maintenance.</li>
-                </ul>
+  <li>Assisted students with software installation and troubleshooting.</li>
+  <li>Managed computer lab inventory and network maintenance.</li>
+  <li>Did ensure that the students always had an access to internet by doing all the necessary activities like crimping, installation of network equipments and many more.</li>
+</ul>
               </div>
             </div>
           ),
@@ -120,7 +121,7 @@ export default function Home() {
           content: (
             <div className="space-y-3 text-sm">
               <div>
-                <h4 className="text-blue-300 font-semibold">How I Built a Sign Language Translator with CNN</h4>
+                <h4 className="text-blue-300 font-semibold">How I Built a a Sign Language Translator with CNN</h4>
                 <p>Tips and challenges I faced building a real-time translation tool for the deaf.</p>
               </div>
               <div>
