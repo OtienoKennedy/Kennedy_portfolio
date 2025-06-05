@@ -28,7 +28,8 @@ export default function Home() {
             "Contact",
           ].map((item) => (
             <li key={item}>
-              <a href={`#${item.toLowerCase().replace(" ", "")}`} className="hover:text-white">
+              {/* Ensure click targets are large enough on touch devices by adding some padding */}
+              <a href={`#${item.toLowerCase().replace(" ", "")}`} className="hover:text-white block py-1">
                 {item}
               </a>
             </li>
@@ -44,7 +45,8 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           src="Kennedy_portfolio/profile.jpg"
           alt="Otieno Kennedy Onyango"
-          className="w-32 h-32 sm:w-44 sm:h-44 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-4 border-blue-400"
+          // Ensure image dimensions are consistent but scale responsively
+          className="w-32 h-32 sm:w-44 sm:h-44 md:w-48 md:h-48 rounded-full object-cover shadow-lg border-4 border-blue-400 flex-shrink-0" // Added flex-shrink-0
         />
 
         <motion.div
@@ -81,8 +83,11 @@ export default function Home() {
           title: "Skills",
           content: (
             <div className="flex flex-wrap gap-3 text-sm justify-center sm:justify-start">
+              {/* Added consistent padding for skill badges */}
               {["Python", "TensorFlow", "OpenCV", "React", "Flask", "Tailwind CSS", "JavaScript"].map((skill) => (
-                <span key={skill} className="bg-blue-800 px-3 py-1 rounded-full">{skill}</span>
+                <span key={skill} className="bg-blue-800 px-3 py-1 rounded-full whitespace-nowrap">
+                  {skill}
+                </span>
               ))}
             </div>
           ),
@@ -96,10 +101,11 @@ export default function Home() {
                 <h3 className="text-blue-300 font-semibold">ICT Support & Lab Assistant – Embu College</h3>
                 <p>Jan 2023 – Dec 2023</p>
                 <ul className="list-disc pl-4 mt-1">
-  <li>Assisted students with software installation and troubleshooting.</li>
-  <li>Managed computer lab inventory and network maintenance.</li>
-  <li>Did ensure that the students always had an access to internet by doing all the necessary activities like crimping, installation of network equipments and many more.</li>
-</ul>
+                  <li>Assisted students with software installation and troubleshooting.</li>
+                  <li>Managed computer lab inventory and network maintenance.</li>
+                  {/* Corrected the list item tag to ensure it renders */}
+                  <li>Did ensure that the students always had an access to internet by doing all the necessary activities like crimping, installation of network equipments and many more.</li>
+                </ul>
               </div>
             </div>
           ),
@@ -121,7 +127,7 @@ export default function Home() {
           content: (
             <div className="space-y-3 text-sm">
               <div>
-                <h4 className="text-blue-300 font-semibold">How I Built a a Sign Language Translator with CNN</h4>
+                <h4 className="text-blue-300 font-semibold">How I Built a Sign Language Translator with CNN</h4>
                 <p>Tips and challenges I faced building a real-time translation tool for the deaf.</p>
               </div>
               <div>
@@ -155,7 +161,7 @@ export default function Home() {
               {["Python", "TensorFlow", "React", "Flask", "OpenCV", "Tailwind CSS", "JavaScript"].map((tech) => (
                 <span
                   key={tech}
-                  className="bg-gradient-to-r from-blue-600 to-blue-800 px-3 py-1 rounded-full shadow-sm"
+                  className="bg-gradient-to-r from-blue-600 to-blue-800 px-3 py-1 rounded-full shadow-sm whitespace-nowrap" // Added whitespace-nowrap
                 >
                   {tech}
                 </span>
@@ -170,9 +176,9 @@ export default function Home() {
             <p className="text-sm break-words">
               Feel free to reach out to me via email or LinkedIn:
               <br />
-              <a href="mailto:otieno.kennedy@example.com" className="text-blue-400 underline">otieno.kennedy@example.com</a>
+              <a href="mailto:otieno.kennedy@example.com" className="text-blue-400 underline hover:text-blue-300">otieno.kennedy@example.com</a>
               <br />
-              <a href="https://linkedin.com/in/otienokennedy" target="_blank" rel="noreferrer" className="text-blue-400 underline">
+              <a href="https://linkedin.com/in/otienokennedy" target="_blank" rel="noreferrer" className="text-blue-400 underline hover:text-blue-300">
                 linkedin.com/in/otienokennedy
               </a>
             </p>

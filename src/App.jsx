@@ -89,6 +89,7 @@ export default function Home() {
             <ul className="list-disc pl-4 mt-1">
               <li>Assisted students with software installation and troubleshooting.</li>
               <li>Managed computer lab inventory and network maintenance.</li>
+              <li>Did ensure that the students always had an access to internet by doing all the necessary activities like crimping, installation of network equipments and many more </li>
             </ul>
           </div>
         </div>
