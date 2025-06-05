@@ -111,7 +111,7 @@ export default function Home() {
         <div className="space-y-3 text-sm">
           <div>
             <h4 className="text-blue-300 font-semibold">How I Built a Sign Language Translator with CNN</h4>
-            <p>Tips and challenges I faced building a real-time translation tool for the deaf.</p>
+            <p>The Tips and  challenges I faced building a real-time translation tool for the deaf.</p>
           </div>
           <div>
             <h4 className="text-blue-300 font-semibold">Why Every Developer Should Learn Flask</h4>
