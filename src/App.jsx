@@ -99,9 +99,7 @@ export default function Home() {
       <section id="certifications" className="mb-10 bg-black bg-opacity-50 p-4 md:p-6 rounded-lg max-w-4xl mx-auto">
         <h2 className="text-2xl font-semibold text-blue-200 mb-4">Certifications & Achievements</h2>
         <ul className="list-disc pl-4 text-sm">
-          {/*<li>Google IT Support Certification – Coursera</li>*/}
-          {/*<li>Python for Everybody – University of Michigan</li>}*/}
-          {/*<li>Best Project Award – University of Embu Final Year Expo 2025</li>*/}
+          <li>Best Project Award – University of Embu Final Year Expo 2025</li>
         </ul>
       </section>
 
